@@ -1,0 +1,11 @@
+version: '3'
+services:
+  calculator:
+    image: psahana27/calculator:latest
+    #container_name: docker-calculator-demo-app, commented so that services can be scales with unique name
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=production
+    deploy:
+      replicas: 2 
