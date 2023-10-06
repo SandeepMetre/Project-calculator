@@ -9,3 +9,4 @@ services:
       - SPRING_PROFILES_ACTIVE=production
     deploy:
       replicas: 2 
+      #
